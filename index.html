@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CodeRush</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div class="main_action_bar">
+        <ul>
+            <li><button onclick="OpenTopCoders()"><img src="images/topcoder.png"/></button></li>
+            <li><button onclick="OpenCodeForces()"><img src="images/codeforces.jpg"/></button></li>
+            <li><button onclick="OpenLeetCode()"><img src="images/leetcode.png"/></button></li>
+            <li><button onclick="OpenCodeChef()"><img src="images/codechef.png"/></button></li>
+        </ul>
+    </div>
+    <div class="main_text_editor">
+        <div class="te_tab_header">
+            <div class="te_tab">
+                <div class="te_tab_element">
+                    <button><p>Problem A.txt</p><button>X</button></button>
+                </div>
+            </div>
+
+            <div class="te_button">
+                <button class="save_button"><p>Save</p></button>
+                <button class="run_button">Run</button>
+            </div>
+        </div>
+        <div class="te_main">
+            <div class="te_main_line">
+                <ul>
+                    <li>1</li>
+                </ul>
+            </div>
+            <textarea class="te_main_codebox" placeholder="code here..." id="code-editor" name="main-code"></textarea>
+        </div>     
+    </div>
+    <div class="main_io">
+        <div class="input">
+            <div class="input_header">
+                <lable>Input</lable>   
+            </div>
+            
+            <textarea id="input-editor"  placeholder="input here..." class="input-code"></textarea>
+        </div>
+
+        <div class="directory_list">
+            <div class="dl_header">
+                <lable>Directory</lable>  
+            </div>
+            <!--<ul>
+                <li><a>index.html</a></li>
+            </ul>-->
+        </div>
+
+        <div class="output">
+            <div class="output_header">
+                <lable>Output</lable>  
+            </div>
+
+            <textarea type="text" id="output-editor"  placeholder="output here..." class="output-code"></textarea>
+        </div>
+    </div>
+</body>
+</html>

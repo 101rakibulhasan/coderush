@@ -1,0 +1,30 @@
+{
+  "name": "coderush",
+  "version": "1.0.0",
+  "description": "CodeRush is an text editor sole purpose is to help competitive programmers in their programming",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/101rakibulhasan/coderush.git"
+  },
+  "keywords": [
+    "coderush",
+    "competitve",
+    "programming",
+    "text",
+    "editor"
+  ],
+  "author": "Rakibul Hasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/101rakibulhasan/coderush/issues"
+  },
+  "homepage": "https://github.com/101rakibulhasan/coderush#readme",
+  "dependencies": {
+    "electron": "^23.2.0"
+  }
+}
