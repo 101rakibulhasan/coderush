@@ -1,0 +1,9 @@
+{
+    "default_programming_language": "C",
+    "default_c_location": "./template/C",
+    "default_cpp_location": "./template/C++",
+    "default_java_location": "./template/Python",
+    "default_python_location": "./template/Java",
+    "last_start_default_option": "single",
+    "working_dir": {}
+}

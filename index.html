@@ -20,15 +20,24 @@
     <div class="main_text_editor">
         <div class="te_tab_header">
             <div class="te_tab">
-                <div class="te_tab_element">
-                    <button><p>Problem A.txt</p><button>X</button></button>
-                </div>
+                <ul>
+                    <li>
+                        <div class="tab_element"><p>A.txt</p><button>X</button></div>
+                    </li>
+                    <li>
+                        <div class="tab_element"><p>A.txt</p><button>X</button></div>
+                    </li>
+                    <li>
+                        <div class="tab_element"><p>A.txt</p><button>X</button></div>
+                    </li>
+                </ul>
             </div>
-
             <div class="te_button">
+                <input class="timer-input" type="text" value="00:00:00"></input>
+                <button class="start_button"><img src="images/play.png"></button>
                 <button class="save_button"><p>Save</p></button>
                 <button class="run_button">Run</button>
-            </div>
+            </div> 
         </div>
         <div class="te_main">
             <div class="te_main_line">
@@ -42,7 +51,7 @@
     <div class="main_io">
         <div class="input">
             <div class="input_header">
-                <lable>Input</lable>   
+                <p>Input</p>   
             </div>
             
             <textarea id="input-editor"  placeholder="input here..." class="input-code"></textarea>
@@ -50,16 +59,16 @@
 
         <div class="directory_list">
             <div class="dl_header">
-                <lable>Directory</lable>  
+                <p>Directory</p>  
             </div>
-            <!--<ul>
+            <ul>
                 <li><a>index.html</a></li>
-            </ul>-->
+            </ul>
         </div>
 
         <div class="output">
             <div class="output_header">
-                <lable>Output</lable>  
+                <p>Output</p>  
             </div>
 
             <textarea type="text" id="output-editor"  placeholder="output here..." class="output-code"></textarea>

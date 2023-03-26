@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/101rakibulhasan/coderush#readme",
   "dependencies": {
-    "electron": "^23.2.0"
+    "electron": "^23.2.0",
+    "fs": "^0.0.1-security"
   }
 }

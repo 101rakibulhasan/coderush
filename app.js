@@ -1,17 +1,20 @@
-const {app,BrowserWindow,Tray, Menu} = require('electron')
+const {app,BrowserWindow,Tray, Menu, dialog,ipcMain} = require('electron')
 const path = require('path');
 const electron = require('electron');
 
 var WIDTH = 800;
 var HEIGHT = 600;
 
+let win = null;
+
 function createWindows()
 {
-    const win = new BrowserWindow({
+    win = new BrowserWindow({
         width:WIDTH,
         height:HEIGHT,
         frame: true,
         transparent: false,
+        resizable: false,
         alwaysOnTop:false,
         title: "CodeRush",
         autoHideMenuBar: false,
@@ -43,5 +46,12 @@ function createWindows()
     let contextMenu = Menu.buildFromTemplate(template)
     tray.setContextMenu(contextMenu)
 }
+
+ipcMain.on('open-main', async(event,arg) => {
+    win.close();
+    let main = new BrowserWindow({width:1200, height: 800})
+    main.loadFile("index.html");    
+    main.show();
+})
 
 app.whenReady().then(createWindows)

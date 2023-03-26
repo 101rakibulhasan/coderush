@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Start Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='start.css'>
+    <script src='start.js'></script>
+</head>
+<body>
+    <div class="main_language_bar">
+        <label>CodeRush</label>
+        <ul>
+            <li id="li_c"><a href="" onclick="progchange('C')"><img src="images/c.png"><p>C</p></a></li>
+            <li id="li_cpp"><a href="" onclick="progchange('Cpp')"><img src="images/cpp.png"><p>C++</p></a></li>
+            <li id="li_java"><a href="" onclick="progchange('Java')"><img src="images/java.png"><p>Java</p></a></li>
+            <li id="li_python"><a href="" onclick="progchange('Python')"><img src="images/python.png"><p>Python</p></a></li>
+        </ul>
+    </div>
+    <div class="main_option">
+        <button id="btn-single"  onclick="openmain('single')" class="create_file single">
+            <div class="file_icon">
+                <img src="images/file.png">
+            </div>
+            <div class="file_desc">
+                <h1>Create a single file</h1>
+                <p>Create a single file for single problem or testing any code</p>
+            </div>
+        </button>
+
+        <button  onclick="openmain('multiple')" id="btn-multiple" class="create_file multiple">
+            <div class="file_icon">
+                <img src="images/files.png">
+            </div>
+            <div class="file_desc">
+                <h1>Create multiple file for contest</h1>
+                <p>Create multiple file from A to J for contest</p>
+            </div>
+        </button>
+
+        <button class="visit_website">
+            <div class="web_icon">
+                <img src="images/web.png">
+            </div>
+            <div class="web_desc">
+                <h1>Visit our website</h1>
+            </div>
+        </button>
+    </div>
+</body>
+</html>

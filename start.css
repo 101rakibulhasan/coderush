@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "typold";
+    src: url("font/Typold-Book500.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: typold;
+    font-size: 12px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+	margin: 0;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    /*background-color: rgb(255, 73, 73);*/
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none; 
+}
+
+.main_language_bar{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+    color: rgb(0, 200, 255);
+    border-right: 1px solid rgb(103, 103, 103);
+    width: 200px;
+    min-width: 200px;
+}
+
+.main_language_bar label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 10px;
+    flex: 5%;
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+
+.main_language_bar ul{
+    flex: 95%;
+}
+
+.main_language_bar a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+
+.main_language_bar li img{
+    width: 20px;
+    height: 20px;
+    margin:10px;
+}
+
+.main_language_bar li p{
+    margin: 10px;
+}
+
+.main_language_bar a{
+    color: rgb(13, 169, 221);
+}
+
+.main_option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 66, 66);
+}
+
+.main_option button{
+    width: 450px;
+    height: 80px;
+    margin: 5px;
+}
+
+.create_file{
+    display: flex;
+    flex-direction: row;
+}
+
+.file_icon{
+    flex: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.file_icon img{
+    width: 30px;
+    height: 30px
+}
+
+.file_desc{
+    flex: 90%;
+    height: 100%;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.file_desc p{
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.web_icon img{
+    width: 30px;
+    height: 30px
+}
